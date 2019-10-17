@@ -1,0 +1,41 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$md-lifelikeprimary: (
+    50 : #e1ecf5,
+    100 : #b5cfe7,
+    200 : #84b0d7,
+    300 : #5390c7,
+    400 : #2e78bb,
+    500 : #0960af,
+    600 : #0858a8,
+    700 : #064e9f,
+    800 : #054496,
+    900 : #023386,
+    A100 : #b3c9ff,
+    A200 : #80a6ff,
+    A400 : #4d82ff,
+    A700 : #3370ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$cbf-app-primary: mat-palette($md-lifelikeprimary);
+$cbf-app-accent:  mat-palette($md-lifelikeprimary, A200, A100, A400);
+
+@include angular-material-theme($cbf-app-theme);

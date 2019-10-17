@@ -1,10 +1,16 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+*{
+  margin:0;
+  padding:0;
+}
+
 /* Angular Material Override */
 .mat-display-1 {
   font-weight:100;
   font-size:3em;
 }
+
 .mat-card-header-text {
   margin:0;
 }
@@ -16,12 +22,13 @@
 /* CFB Custom Css */
 body {
   font-family: seravek-web, sans-serif;
-  background-image: url('./img/lifelike_Menu_BG.jpg') ;
+  background-color:#f0f7ff;
+  height:100%;
+  width:100%;
+  background-image: url('/img/lifelike_Menu_BG.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color:#f0f7ff;
-  height:100%;
 }
 
 h1,
@@ -35,6 +42,10 @@ a,
   font-family: seravek-web, sans-serif;
 }
 
+.mat-toolbar, .mat-toolbar-single-row {
+  background-color: transparent;
+  height:100%;
+}
 
 .container {
   width:90%;
@@ -42,6 +53,10 @@ a,
   padding-top:4%;
 }
 
+.logo {
+  height:64px;
+  padding-top:10px;
+}
  .cbf-card {
    margin-bottom:2vh;
    min-height:30vh;
@@ -63,7 +78,7 @@ a {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #0960af;
   font-weight:300;
-  font-size:2em;
+  font-size:1.5em;
 }
 
 .mat-card-actions {
@@ -74,7 +89,7 @@ a {
 
 .cfb-card-btn {
   position:absolute;
-  left:100%;
+  left:calc(100% - 1px);
   right:0;
   /*top:34px;*/
   color:#f5f5f5;
