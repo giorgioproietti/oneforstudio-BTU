@@ -112,14 +112,25 @@ a {
   flex: 1 1 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .logo {
   display:flex;
   height:10vh;
-  width: auto;
+  width: auto; 
   padding-top:10vh;
-  /*margin: 0 auto;*/
-  transition: height ease .6s;
+  margin: 0 auto;
+  -webkit-transition: height ease .4;
+    -moz-transition: height ease .4s;
+   transition: height ease .4s;
+}
+
+.cbf-card-title {
+  font-family: "seravek-web",sans-serif;
+  color: #0960af;
+  font-weight:300;
+  font-size:3vh;
+  padding-top:2%;
+  padding-bottom:4%;
 }
 
 }
