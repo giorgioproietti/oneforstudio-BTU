@@ -23,9 +23,8 @@
 body {
   font-family: "seravek-web",sans-serif;
   background-color:#f0f7ff;
-  height:100%;
-  width:100%;
-  background-image: url('/img/lifelike_Menu_BG.jpg') ;
+  min-height:100vh;
+  background-image: url('https://cdn.jsdelivr.net/gh/oneforstudio/oneforstudio-BTU@master/src/app/img/lifelike_Menu_BG.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -50,16 +49,21 @@ a,
 .container {
   width:90%;
   margin:auto;
-  padding-top:4%;
+  padding-top:14vh;
 }
 
 .logo {
-  height:64px;
-  padding-top:10px;
+  display:flex;
+  height:14vh;
+  width: auto;
+  padding-top:10vh;
+  /*margin: 0 auto;*/
 }
+
  .cbf-card {
    margin-bottom:2vh;
    min-height:30vh;
+   color: #404040;
 
  }
  .cbf-card:hover{
@@ -78,23 +82,19 @@ a {
   font-family: "seravek-web",sans-serif;
   color: #0960af;
   font-weight:300;
-  font-size:1.5em;
+  font-size:3vh;
+  padding-top:2%;
+  padding-bottom:8%;
 }
 
 .mat-card-actions {
   position:absolute;
-  bottom:0;
   top:25vh;
+  width:calc(100% - 14vh);
 }
 
 .cfb-card-btn {
-  position:absolute;
-  left:calc(100% - 1px);
-  right:0;
-  /*top:34px;*/
-  color:#f5f5f5;
-  padding:0;
-  margin:0;
+  float:right;
 }
 
 .cfb-card-btn:hover {
@@ -102,4 +102,24 @@ a {
   -webkit-transition: all ease .4;
   -moz-transition: all ease .4s;
  transition: all ease .4s;
+}
+
+.cdk-global-overlay-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 600px) {
+  .logo {
+  display:flex;
+  height:10vh;
+  width: auto;
+  padding-top:10vh;
+  /*margin: 0 auto;*/
+  transition: height ease .6s;
+}
+
 }
