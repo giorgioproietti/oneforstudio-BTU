@@ -21,7 +21,7 @@
 
 /* CFB Custom Css */
 body {
-  font-family: seravek-web, sans-serif;
+  font-family: "seravek-web",sans-serif;
   background-color:#f0f7ff;
   height:100%;
   width:100%;
@@ -39,7 +39,7 @@ h5,
 p,
 a,
 .mat-display-1 {
-  font-family: seravek-web, sans-serif;
+  font-family: "seravek-web",sans-serif;
 }
 
 .mat-toolbar, .mat-toolbar-single-row {
@@ -75,7 +75,7 @@ a {
 }
 
 .cbf-card-title {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "seravek-web",sans-serif;
   color: #0960af;
   font-weight:300;
   font-size:1.5em;
